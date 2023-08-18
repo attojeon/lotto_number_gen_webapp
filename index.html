@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호AI 생성기</title>
+    <link rel="stylesheet" href="static/lotto.css">
+</head>
+<body>
+    <div class="container">
+        <h1>로또번호AI 생성기</h1>
+        <label for="set-count">로또번호 세트 생성수량:</label>
+        <input type="number" id="set-count" min="1" max="8" value="1">
+        <button onclick="generateLottoNumbers()">로또번호 생성</button>
+        <div id="lotto-sets"></div>
+        <hr>
+        <h2>로또 번호 빈도수</h2>
+        <canvas id="frequency-chart" width="400" height="200"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="static/lotto.js"></script>
+</body>
+</html>
