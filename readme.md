@@ -35,7 +35,7 @@ services:
     volumes:
       - ./html/:/usr/share/nginx/html/
       - ./nginx_conf/nginx.conf:/etc/nginx/conf.d/default.conf
-
+    restart: always
 ```
 
 2. docker로 실행허기
